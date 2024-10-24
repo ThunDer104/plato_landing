@@ -1,0 +1,982 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*+ Общие стили  */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+html {
+    margin: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+button {
+    appearance: none;
+}
+
+/*+ Секция Welcome  */
+
+.welcome {
+    height: 100vh;
+    background-image: url(/img/bg/welcome__bg.jpg);
+    background-repeat: no-repeat;
+    margin-top: -8px;
+    background-size: cover;
+}
+
+.welcome__container {
+    height: 420px;
+    padding: 215px 15px 0 15px;
+}
+
+.welcome__title {
+    font-weight: 400;
+    font-size: 97px;
+    color: #3a173c;
+}
+
+.welcome__desc {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    color: #3a173c;
+}
+
+.welcome__buttons {
+    margin-top: 40px;
+}
+
+.welcome__button-try {
+    border: 2px solid #3a173c;
+    border-radius: 44px;
+    width: 272px;
+    height: 68px;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: #3a173c;
+    padding: 15px 62px;
+    transition: all 0.5s;
+}
+
+.welcome__button-now {
+    border: 2px solid #3a173c;
+    border-radius: 44px;
+    width: 260px;
+    height: 68px;
+    background: #3a173c;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    color: #e0dcdb;
+    padding: 16px 77px;
+    transition: all 0.5s;
+}
+
+.welcome__button-try:hover {
+    background: rgb(248, 132, 89);
+    border: none;
+}
+
+.welcome__button-now:hover {
+    background: rgb(248, 132, 89);
+    border: none;
+}
+
+.welcome__bg-decoration {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    size: cover;
+    width: 100%;
+}
+
+/*+ Секция Feedback */
+.feedback {
+    margin-bottom: 380px;
+}
+
+.feedback__title {
+    width: 860px;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 110%;
+    text-align: center;
+    color: #3a173c;
+    margin: 55px 320px 85px 320px;
+
+}
+
+.feedback__cards {
+    display: flex;
+}
+
+.feedback__card {
+    width: 33%;
+    height: 470px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 25px;
+}
+
+.card__img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 31px;
+}
+
+.card__desc {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    color: #3a173c;
+    flex: 1 1 auto;
+}
+
+.card__author {
+    font-weight: 400;
+    font-size: 18px;
+    color: #3a173c;
+}
+
+.feedback__decoration-circle {
+    position: absolute;
+    left: 0;
+    top: 845px;
+}
+
+.feedback__decoration-leaf__right {
+    position: absolute;
+    right: 60px;
+    top: 850px;
+    z-index: -1;
+}
+
+.feedback__decoration-leaf__left {
+    position: absolute;
+    z-index: -1;
+    left: 55px;
+    top: 1330px;
+}
+
+.focus {
+    background-color: #3A173C;
+    height: 785px;
+    margin-bottom: 400px;
+}
+
+.feedback__bg-decoration-top {
+    position: absolute;
+    top: 1837px;
+    size: cover;
+    width: 100%;
+}
+
+.feedback__bg-decoration-bottom {
+    position: absolute;
+    size: cover;
+    width: 100%;
+    top: 2840px;
+}
+
+.focus__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 290px;
+}
+
+.focus__title {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 110%;
+    color: #e0dcdb;
+}
+
+.focus__img {
+    padding: 0 250px;
+    margin: 5px 0 20px 0;
+}
+
+.focus__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+    text-align: center;
+    color: #e0dcdb;
+}
+
+/* + Секция Product */
+.product {
+    margin-bottom: 500px;
+}
+
+.product__title {
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 110%;
+    text-align: center;
+    color: #3a173c;
+    margin: 0 300px;
+}
+
+.product__desc {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: center;
+    color: #3a173c;
+    margin: 0 360px;
+}
+
+.product__cards {
+    margin: 25px 25px 100px;
+}
+
+.product__card {
+    display: flex;
+    align-items: center;
+}
+
+
+.product__card-dose {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #3a173c;
+}
+
+.product__card-title {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 110%;
+    color: #3a173c;
+}
+
+.product__card-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #3a173c;
+}
+
+.product__card__text-wrapper:nth-child(even) {
+    margin-left: 50px;
+    margin-right: 260px;
+}
+
+.product__card__text-wrapper:nth-child(odd) {
+    margin-right: 50px;
+    margin-left: 170px;
+}
+
+.product__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.product__btn {
+    /*- box styles*/
+    border: 2px solid #3a173c;
+    border-radius: 44px;
+    width: 420px;
+    height: 83px;
+    background: #3a173c;
+    /*! text styles */
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 162%;
+    text-align: center;
+    color: #e0dcdb;
+    transition: all 0.5s;
+}
+
+.product__btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+/* + Секция Info */
+.info {
+    background-color: #3A173C;
+    height: 670px;
+    margin-bottom: 400px;
+}
+
+.info__bg-decoration-top {
+    position: absolute;
+    top: 6400px;
+    width: 100%;
+}
+
+.info__bg-decoration-bottom {
+    position: absolute;
+    top: 7280px;
+    width: 100%;
+    z-index: -1;
+}
+
+.info__container {
+    padding: 0 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__title {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 110%;
+    text-align: center;
+    color: #e0dcdb;
+    margin-bottom: 50px;
+}
+
+.info__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+    color: #e0dcdb;
+    margin: 0 50px;
+    margin-bottom: 15px;
+}
+
+.info__btn {
+    margin-top: 30px;
+    /*- box styles */
+    border: 2px solid #b9e2bf;
+    border-radius: 44px;
+    width: 420px;
+    height: 83px;
+    background: #b9e2bf;
+    /* + text styles */
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 162%;
+    color: #3a173c;
+    padding: 25px 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.info__btn:hover {
+    opacity: 0.6;
+}
+
+/*+ Секция Guide */
+.guide {
+    margin-bottom: 500px;
+}
+
+.guide__decoration-leaf-left {
+    position: absolute;
+    top: 8250px;
+    left: 77px;
+}
+
+.guide__decoration-leaf-right {
+    position: absolute;
+    top: 7730px;
+    right: 120px;
+}
+
+.guide__container {
+    display: flex;
+    margin: 0 150px;
+    gap: 100px;
+}
+
+.guide__text-wrapper {
+    width: 550px;
+}
+
+.guide__title {
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 110%;
+    color: #3a173c;
+    margin-bottom: 30px;
+}
+
+.guide__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+    color: #3a173c;
+    margin-bottom: 15px;
+}
+
+.guide__btn {
+    margin-top: 25px;
+    /*- box styles */
+    border: 2px solid #3a173c;
+    border-radius: 44px;
+    width: 420px;
+    height: 83px;
+    background: #3a173c;
+    /* + text styles */
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 162%;
+    text-align: center;
+    color: #e0dcdb;
+    transition: opacity 0.5s;
+}
+
+.guide__btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/*+ Секция About */
+.about {
+    background-color: #3A173C;
+    margin-bottom: 250px;
+}
+
+.about__decoration-top {
+    position: absolute;
+    top: 8655px;
+    width: 1589px;
+    margin-left: -5px;
+}
+
+.about__title {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 110%;
+    text-align: center;
+    color: #e0dcdb;
+    margin: 0 270px;
+}
+
+.about__container {
+    display: flex;
+    gap: 100px;
+    padding: 100px;
+}
+
+
+.about__card-title {
+    font-weight: 400;
+    font-size: 98px;
+    line-height: 100%;
+    text-align: center;
+    color: #e0dcdb;
+}
+
+.about__card-desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 140%;
+    text-align: center;
+    color: #e0dcdb;
+}
+
+/* + Секция Motivation */
+.motivation {
+    margin-bottom: 200px;
+}
+
+.motivation__decoration-leaf-left {
+    position: absolute;
+    top: 10950px;
+    left: 120px;
+}
+
+
+.motivation__decoration-leaf-right {
+    position: absolute;
+    right: 50px;
+    top: 9600px;
+}
+
+.motivation__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.motivation__title {
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 110%;
+    text-align: center;
+    color: #3a173c;
+    margin: 0 200px 55px;
+}
+
+.motivation__quote {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+    text-align: center;
+    color: #3a173c;
+    margin: 0 470px 15px;
+}
+
+.motivation__img {
+    margin: 55px 0;
+}
+
+.motivation__subtitle {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: center;
+    color: #3a173c;
+    margin: 0 200px 40px;
+}
+
+.motivation__desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+    text-align: center;
+    color: #3a173c;
+    margin: 15px 420px;
+}
+
+.motivation__btn {
+    margin-top: 50px;
+    /*- box styles */
+    border: 2px solid #3a173c;
+    border-radius: 44px;
+    width: 420px;
+    height: 83px;
+    background: #3a173c;
+
+    /* + text styles */
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 162%;
+    text-align: center;
+    color: #e0dcdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s;
+}
+
+.motivation__btn:hover {
+    opacity: 0.7;
+}
+
+/* + Секция getoff */
+.getoff {
+    position: relative;
+    margin-bottom: 1350px;
+}
+
+.getoff__bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.getoff__container {
+    margin: 340px 490px;
+    position: absolute;
+}
+
+.getoff__decoration {
+    position: absolute;
+    top: 35px;
+    right: 570px;
+}
+
+
+.getoff__title {
+
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 119%;
+    text-align: center;
+    color: #c0b9b5;
+    margin-bottom: 60px;
+}
+
+.getoff__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+
+    .advantages {}
+
+    .advantages__decoration-leaf-left {}
+
+    .advantages__decoration-leaf-right {}
+
+    .advantages__deciration-circles {}
+
+    .advantages__title {}
+
+    .advantages__desc {}
+
+    .advatages__btn {}
+
+    text-align: center;
+    color: #c0b9b5;
+    margin-bottom: 30px;
+}
+
+/* + Секция Advantages */
+.advantages {
+    margin-bottom: 500px;
+}
+
+.advantages__decoration-leaf-left {
+    position: absolute;
+    top: 12900px;
+    left: 150px;
+}
+
+.advantages__decoration-leaf-right {
+    position: absolute;
+    top: 12550px;
+    right: 60px;
+}
+
+.advantages__deciration-circles {
+    position: absolute;
+    top: 12450px;
+    z-index: -1;
+    left: 73px;
+}
+
+.advantages__title {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 110%;
+    color: #3a173c;
+    margin-left: 240px;
+    margin-right: 260px;
+}
+
+.advantages__container {
+    margin: 55px 400px 60px 400px;
+}
+
+.button__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advantages__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+    color: #3a173c;
+    margin-bottom: 15px;
+}
+
+.advantages__btn {
+    /*- box styles */
+    border: 2px solid #3a173c;
+    border-radius: 44px;
+    width: 420px;
+    height: 83px;
+    background: #3a173c;
+    /* + text styles */
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 162%;
+    color: #e0dcdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s;
+}
+
+.advantages__btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* + Секция OFFER */
+.offer {
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.offer .container {
+    background: #3a173c;
+
+}
+
+.offer__title {
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    color: #e0dcdb;
+    margin-bottom: 40px;
+}
+
+.offer__subtitle {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: #e0dcdb;
+    margin-bottom: 70px;
+}
+
+.offer__container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+}
+
+.offer__img {}
+
+.offer__text-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.offer__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+    color: #e0dcdb;
+    margin: 0 150px 30px 50px;
+}
+
+.offer__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer__btn-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #e0dcdb;
+    margin-bottom: 20px;
+}
+
+.offer__btn-add {
+    /*- box styles */
+    border: 2px solid #b9e2bf;
+    border-radius: 44px;
+    width: 420px;
+    height: 83px;
+    background: #b9e2bf;
+
+    /*+ text styles */
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 162%;
+    color: #3a173c;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+}
+
+.offer__btn-all {
+    /*- box styles */
+    border: 2px solid #e0dcdb;
+    border-radius: 44px;
+    width: 420px;
+    height: 83px;
+    background: none;
+    /*+ text styles */
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 162%;
+    color: #e0dcdb;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+.offer__btn-add:hover {
+    background: rgb(177, 130, 173);
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.offer__btn-all:hover {
+    background: rgb(177, 130, 173);
+    border: none;
+    cursor: pointer;
+}
+
+.offer__btn-desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+    text-align: center;
+    color: #e0dcdb;
+
+    background: url(/img/decorations/price__list-item.svg) left no-repeat;
+    padding-left: 30px;
+}
+
+.offer__decoration-top {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.offer__decoration-bottom {
+    width: 100%;
+}
+
+
+
+.quotes {
+    margin-bottom: 200px;
+}
+
+.quotes__subtitle {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: center;
+    color: #3a173c;
+    margin-bottom: 40px;
+}
+
+.quotes__container {
+    margin: 0 480px;
+}
+
+.quotes__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+    color: #3a173c;
+    margin-bottom: 20px;
+}
+
+.quotes__title {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 125%;
+    text-align: center;
+    color: #3a173c;
+    margin-top: 84px;
+    margin-bottom: 40px;
+}
+
+
+.contact-us {}
+
+.contact-us .container {
+    background: #3a173c;
+    padding: 0 38px 0 35px;
+    display: flex;
+    height: 400px;
+}
+
+.contact-us__text-wrapper {
+    padding-right: 230px;
+}
+
+.contact-us__title {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 110%;
+    color: #e0dcdb;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.contact-us__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 162%;
+    color: #e0dcdb;
+}
+
+.contact-us__img-wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact-us__img {
+    transition: all 0.9s;
+}
+.contact-us__img:hover {
+    transform: scale(0.8, 0.8) rotate(360deg);
+}
+
+
+
+
+.contact-us__decoration-top {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+.contact-us__decoration-bottom {
+    width: 100%;
+}
+
+
+
+
+
+
+@media (max-width: 1550px) {
+    .decoration {
+        display: none;
+    }
+    
+}
